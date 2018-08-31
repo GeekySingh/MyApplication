@@ -10,7 +10,7 @@ public class DateUtilsTest {
 
     @Test
     public void dateUtilsFormat_isCorrect() throws Exception {
-        long epoc = 1446885450; //7th Nov 2015
+        long epoc = 14468854; //7th Nov 2015
         Date date = DateUtils.epocSecondsToDate(epoc);
         assertEquals("Date time in millis is wrong",
                 epoc * 1000, date.getTime());
@@ -20,7 +20,12 @@ public class DateUtilsTest {
 
     @Test
     public void dateUtilsFormat_anotherTest() throws Exception {
-
+        long epoc = 1446885450; //7th Nov 2015
+        Date date = DateUtils.epocSecondsToDate(epoc);
+        assertEquals("Date time in millis is wrong",
+                epoc * 1000, date.getTime());
+        String day = DateUtils.dateToDayDateString(date, true);
+        assertEquals("Day is wrong", "SAT", day);
     }
 
 }
