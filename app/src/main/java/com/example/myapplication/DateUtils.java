@@ -6,7 +6,7 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
 
-public class DateUtil {
+public class DateUtils {
 
     public static final SimpleDateFormat DISPLAY;
     public static final SimpleDateFormat DISPLAY_SHORT;
